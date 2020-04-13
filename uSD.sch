@@ -1,0 +1,189 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Micro_SD_Card_Det_Hirose_DM3AT J1
+U 1 1 5D8B2468
+P 6300 3450
+F 0 "J1" H 6250 4267 50  0000 C CNN
+F 1 "MOLEX 503398-1892 " H 6250 4176 50  0000 C CNN
+F 2 "My_Connector_card:uSD_MOLEX_503398_1892" H 8350 4150 50  0001 C CNN
+F 3 "https://www.tme.eu/Document/28383b7c5af14df0353c0f828f6a9171/MX-503398-1892.pdf" H 6300 3550 50  0001 C CNN
+	1    6300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5D8B507E
+P 5350 3550
+F 0 "#PWR028" H 5350 3300 50  0001 C CNN
+F 1 "GND" V 5355 3422 50  0000 R CNN
+F 2 "" H 5350 3550 50  0001 C CNN
+F 3 "" H 5350 3550 50  0001 C CNN
+	1    5350 3550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 3550 5400 3550
+$Comp
+L power:GND #PWR029
+U 1 1 5D8B783A
+P 5350 4000
+F 0 "#PWR029" H 5350 3750 50  0001 C CNN
+F 1 "GND" H 5355 3827 50  0000 C CNN
+F 2 "" H 5350 4000 50  0001 C CNN
+F 3 "" H 5350 4000 50  0001 C CNN
+	1    5350 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4000 5350 3950
+Text HLabel 4750 3850 0    50   Output ~ 0
+uSD_DETECT
+Text HLabel 4750 3650 0    50   Output ~ 0
+uSD_MISO
+Text HLabel 4750 3450 0    50   Input ~ 0
+uSD_CLK
+Text HLabel 4800 3150 0    50   Input ~ 0
+uSD_CS
+Text HLabel 4800 3250 0    50   Input ~ 0
+uSD_MOSI
+NoConn ~ 5400 3050
+NoConn ~ 5400 3750
+$Comp
+L power:GND #PWR030
+U 1 1 5D8BC4C5
+P 7100 4000
+F 0 "#PWR030" H 7100 3750 50  0001 C CNN
+F 1 "GND" H 7105 3827 50  0000 C CNN
+F 2 "" H 7100 4000 50  0001 C CNN
+F 3 "" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3950 7100 4000
+Wire Wire Line
+	5350 3950 5400 3950
+Wire Wire Line
+	4800 3150 5400 3150
+Wire Wire Line
+	4800 3250 5400 3250
+Wire Wire Line
+	4750 3850 5400 3850
+Wire Wire Line
+	4750 3650 5400 3650
+Wire Wire Line
+	4750 3450 5400 3450
+Wire Wire Line
+	3750 3700 3900 3700
+Connection ~ 3750 3700
+Wire Wire Line
+	3750 3750 3750 3700
+Wire Wire Line
+	3500 3700 3750 3700
+Wire Wire Line
+	3900 3700 3900 3650
+Wire Wire Line
+	3500 3650 3500 3700
+$Comp
+L power:GND #PWR027
+U 1 1 5D928825
+P 3750 3750
+F 0 "#PWR027" H 3750 3500 50  0001 C CNN
+F 1 "GND" H 3755 3577 50  0000 C CNN
+F 2 "" H 3750 3750 50  0001 C CNN
+F 3 "" H 3750 3750 50  0001 C CNN
+	1    3750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3350 5400 3350
+Connection ~ 3900 3350
+Wire Wire Line
+	3900 3450 3900 3350
+Connection ~ 3500 3350
+Wire Wire Line
+	3500 3450 3500 3350
+Wire Wire Line
+	3500 3350 3900 3350
+Wire Wire Line
+	3500 3250 3500 3350
+$Comp
+L power:+3.3V #PWR026
+U 1 1 5D91EAF2
+P 3500 3250
+F 0 "#PWR026" H 3500 3100 50  0001 C CNN
+F 1 "+3.3V" H 3515 3423 50  0000 C CNN
+F 2 "" H 3500 3250 50  0001 C CNN
+F 3 "" H 3500 3250 50  0001 C CNN
+	1    3500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D919E75
+P 3500 3550
+AR Path="/5D75BDD4/5D919E75" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D919E75" Ref="C?"  Part="1" 
+AR Path="/5D8B1FDE/5D919E75" Ref="C15"  Part="1" 
+F 0 "C15" H 3592 3596 50  0000 L CNN
+F 1 "4u7 X5R" H 3592 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3500 3550 50  0001 C CNN
+F 3 "~" H 3500 3550 50  0001 C CNN
+F 4 "CL10A475KP8NNNC" H 3500 3550 50  0001 C CNN "Symbol"
+	1    3500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D91D52C
+P 3900 3550
+AR Path="/5D75BDD4/5D91D52C" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D91D52C" Ref="C?"  Part="1" 
+AR Path="/5D8B1FDE/5D91D52C" Ref="C16"  Part="1" 
+F 0 "C16" H 3950 3600 50  0000 L CNN
+F 1 "100n" H 3950 3500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3900 3550 50  0001 C CNN
+F 3 "" H 3900 3550 50  0001 C CNN
+F 4 "06033C104JAT2A" H 3900 3550 50  0001 C CNN "Symbol"
+	1    3900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D9206FD
+P 3000 3550
+AR Path="/5D75BDD4/5D9206FD" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D9206FD" Ref="C?"  Part="1" 
+AR Path="/5D8B1FDE/5D9206FD" Ref="C14"  Part="1" 
+F 0 "C14" H 3092 3596 50  0000 L CNN
+F 1 "4u7 X5R" H 3092 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 3550 50  0001 C CNN
+F 3 "~" H 3000 3550 50  0001 C CNN
+F 4 "CL10A475KP8NNNC" H 3000 3550 50  0001 C CNN "Symbol"
+	1    3000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 3650 3000 3700
+Wire Wire Line
+	3000 3700 3500 3700
+Connection ~ 3500 3700
+Wire Wire Line
+	3000 3450 3000 3350
+Wire Wire Line
+	3000 3350 3500 3350
+$EndSCHEMATC

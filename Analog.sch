@@ -1,0 +1,888 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR016
+U 1 1 5D75D4F6
+P 3650 4350
+F 0 "#PWR016" H 3650 4100 50  0001 C CNN
+F 1 "GND" H 3655 4177 50  0000 C CNN
+F 2 "" H 3650 4350 50  0001 C CNN
+F 3 "" H 3650 4350 50  0001 C CNN
+	1    3650 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4300 3650 4350
+$Comp
+L Amplifier_Operational:LMV321 U?
+U 1 1 5D75D46F
+P 3750 4000
+AR Path="/5D75D46F" Ref="U?"  Part="1" 
+AR Path="/5D75C1ED/5D75D46F" Ref="U3"  Part="1" 
+F 0 "U3" H 3850 4200 50  0000 L CNN
+F 1 "LMV321ILT" H 3850 4100 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3750 4000 50  0001 L CNN
+F 3 "http://datasheet.octopart.com/LMV321ILT-STMicroelectronics-datasheet-10031481.pdf" H 3750 4000 50  0001 C CNN
+	1    3750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4100 3450 4800
+Wire Wire Line
+	3450 4800 3650 4800
+Wire Wire Line
+	3950 4800 4100 4800
+Wire Wire Line
+	4100 4800 4100 4000
+Wire Wire Line
+	4100 4000 4050 4000
+Wire Wire Line
+	3450 3900 2850 3900
+$Comp
+L Device:R R3
+U 1 1 5D75FC54
+P 2850 4100
+F 0 "R3" H 2780 4054 50  0000 R CNN
+F 1 "4,7k 0,1%" H 2780 4145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 4100 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/AR03BTCX4701-Viking-datasheet-42485073.pdf" H 2850 4100 50  0001 C CNN
+	1    2850 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 5D760437
+P 2850 4350
+F 0 "#PWR015" H 2850 4100 50  0001 C CNN
+F 1 "GND" H 2855 4177 50  0000 C CNN
+F 2 "" H 2850 4350 50  0001 C CNN
+F 3 "" H 2850 4350 50  0001 C CNN
+	1    2850 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 4350 2850 4250
+Wire Wire Line
+	2850 3900 2850 3950
+$Comp
+L Device:R R2
+U 1 1 5D760D1E
+P 2850 3700
+F 0 "R2" H 2780 3654 50  0000 R CNN
+F 1 "2.2k 0.1%" H 2780 3745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 2780 3700 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/AR03BTCX2201-Viking-datasheet-42485073.pdf" H 2850 3700 50  0001 C CNN
+	1    2850 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 3850 2850 3900
+Connection ~ 2850 3900
+Wire Wire Line
+	4100 4000 4300 4000
+Connection ~ 4100 4000
+Text HLabel 4750 4000 2    50   Input ~ 0
+AVin
+$Comp
+L Device:C_Small C9
+U 1 1 5D7646B2
+P 3800 3400
+F 0 "C9" H 3892 3446 50  0000 L CNN
+F 1 "10nF" H 3892 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3800 3400 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/08053C103KAT2A-AVX-datasheet-12509786.pdf" H 3800 3400 50  0001 C CNN
+	1    3800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 5D768685
+P 3950 3550
+F 0 "#PWR017" H 3950 3300 50  0001 C CNN
+F 1 "GND" H 4050 3450 50  0000 C CNN
+F 2 "" H 3950 3550 50  0001 C CNN
+F 3 "" H 3950 3550 50  0001 C CNN
+	1    3950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3500 3800 3550
+Wire Wire Line
+	3800 3550 3950 3550
+Wire Wire Line
+	4100 3500 4100 3550
+Wire Wire Line
+	4100 3550 3950 3550
+Connection ~ 3950 3550
+Wire Wire Line
+	3650 3700 3650 3250
+Wire Wire Line
+	3650 3250 3800 3250
+Wire Wire Line
+	4100 3250 4100 3300
+Wire Wire Line
+	3800 3300 3800 3250
+Connection ~ 3800 3250
+Wire Wire Line
+	3800 3250 4100 3250
+Wire Wire Line
+	2850 3350 2850 3550
+Text Notes 1100 3250 0    50   ~ 0
+0-5V
+Wire Wire Line
+	8200 3600 8200 3000
+$Comp
+L power:GND #PWR022
+U 1 1 5D774BDE
+P 8000 3250
+F 0 "#PWR022" H 8000 3000 50  0001 C CNN
+F 1 "GND" H 8005 3077 50  0000 C CNN
+F 2 "" H 8000 3250 50  0001 C CNN
+F 3 "" H 8000 3250 50  0001 C CNN
+	1    8000 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 3200 8000 3250
+Wire Wire Line
+	8000 3000 8200 3000
+Connection ~ 8200 3000
+Wire Wire Line
+	8400 3200 8400 3250
+$Comp
+L power:GND #PWR024
+U 1 1 5D776623
+P 8400 3250
+F 0 "#PWR024" H 8400 3000 50  0001 C CNN
+F 1 "GND" H 8405 3077 50  0000 C CNN
+F 2 "" H 8400 3250 50  0001 C CNN
+F 3 "" H 8400 3250 50  0001 C CNN
+	1    8400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 3000 8200 3000
+$Comp
+L Device:R R10
+U 1 1 5D78E8D9
+P 8900 4000
+F 0 "R10" V 8800 4000 50  0000 C CNN
+F 1 "10R" V 9000 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8830 4000 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CRCW060310R0FKEA-Vishay-datasheet-14722531.pdf" H 8900 4000 50  0001 C CNN
+	1    8900 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8750 4000 8600 4000
+Text HLabel 10800 4000 2    50   UnSpc ~ 0
+DACout
+Wire Wire Line
+	9700 4000 9100 4000
+$Comp
+L power:+3.3V #PWR018
+U 1 1 5D797277
+P 5900 4500
+F 0 "#PWR018" H 5900 4350 50  0001 C CNN
+F 1 "+3.3V" H 5915 4673 50  0000 C CNN
+F 2 "" H 5900 4500 50  0001 C CNN
+F 3 "" H 5900 4500 50  0001 C CNN
+	1    5900 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 5650 5550 0    50   BiDi ~ 0
+DAC_SDA
+Text HLabel 5650 5050 0    50   Input ~ 0
+DAC_SCL
+$Comp
+L Reference_voltage_custom:TL431BMFDT U4
+U 1 1 5D7AE09F
+P 7100 3300
+F 0 "U4" H 7178 3346 50  0000 L CNN
+F 1 "TL431BMFDT" H 7178 3255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 3300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/TL431BMFDT-Nexperia-datasheet-58096974.pdf" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5D7AF787
+P 7100 3550
+F 0 "#PWR021" H 7100 3300 50  0001 C CNN
+F 1 "GND" H 7105 3377 50  0000 C CNN
+F 2 "" H 7100 3550 50  0001 C CNN
+F 3 "" H 7100 3550 50  0001 C CNN
+	1    7100 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3500 7100 3550
+$Comp
+L Device:R R8
+U 1 1 5D7B40E0
+P 7100 2850
+F 0 "R8" V 7000 2850 50  0000 C CNN
+F 1 "1,8k" V 7200 2850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7030 2850 50  0001 C CNN
+F 3 "~" H 7100 2850 50  0001 C CNN
+	1    7100 2850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7100 3000 7100 3050
+Wire Wire Line
+	7100 3050 6900 3050
+Wire Wire Line
+	6900 3050 6900 3300
+Connection ~ 7100 3050
+Wire Wire Line
+	7100 3050 7100 3100
+Wire Wire Line
+	7100 3050 7700 3050
+Wire Wire Line
+	7700 3050 7700 3900
+Wire Wire Line
+	7700 3900 7800 3900
+$Comp
+L Device:C_Small C11
+U 1 1 5D7CEC65
+P 6750 3300
+F 0 "C11" H 6550 3350 50  0000 L CNN
+F 1 "1nF-DNP" H 6300 3200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6750 3300 50  0001 C CNN
+F 3 "~" H 6750 3300 50  0001 C CNN
+	1    6750 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3200 6750 3050
+Wire Wire Line
+	6750 3050 6900 3050
+Connection ~ 6900 3050
+$Comp
+L power:GND #PWR019
+U 1 1 5D7D029A
+P 6750 3550
+F 0 "#PWR019" H 6750 3300 50  0001 C CNN
+F 1 "GND" H 6755 3377 50  0000 C CNN
+F 2 "" H 6750 3550 50  0001 C CNN
+F 3 "" H 6750 3550 50  0001 C CNN
+	1    6750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3400 6750 3550
+Text Notes 7250 3050 0    50   ~ 0
+2,495V\n
+Wire Wire Line
+	7100 2700 7700 2700
+Wire Wire Line
+	7700 2700 8200 2700
+Wire Wire Line
+	8200 2700 8200 3000
+Connection ~ 7700 2700
+$Comp
+L Power_Protection:USBLC6-2SC6 U2
+U 1 1 5D80D721
+P 2150 3350
+F 0 "U2" H 2500 3000 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 1750 3000 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 1400 3750 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 2350 3700 50  0001 C CNN
+	1    2150 3350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2650 3250 2650 3350
+Wire Wire Line
+	2650 3350 2850 3350
+Connection ~ 2650 3350
+Wire Wire Line
+	2650 3350 2650 3450
+Wire Wire Line
+	1300 3350 1650 3350
+Wire Wire Line
+	1650 3350 1650 3250
+Wire Wire Line
+	1650 3350 1650 3450
+Connection ~ 1650 3350
+$Comp
+L power:GND #PWR013
+U 1 1 5D825368
+P 2250 2700
+F 0 "#PWR013" H 2250 2450 50  0001 C CNN
+F 1 "GND" H 2255 2527 50  0000 C CNN
+F 2 "" H 2250 2700 50  0001 C CNN
+F 3 "" H 2250 2700 50  0001 C CNN
+	1    2250 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2700 2150 2850
+$Comp
+L Power_Protection:USBLC6-2SC6 U6
+U 1 1 5D880A60
+P 10200 4000
+F 0 "U6" H 9650 4500 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 9850 4400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 9450 4400 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 10400 4350 50  0001 C CNN
+	1    10200 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 3900 10700 4000
+Wire Wire Line
+	10700 4000 10800 4000
+Connection ~ 10700 4000
+Wire Wire Line
+	10700 4000 10700 4100
+Wire Wire Line
+	9700 3900 9700 4000
+Wire Wire Line
+	9700 4100 9700 4000
+Connection ~ 9700 4000
+$Comp
+L power:GND #PWR025
+U 1 1 5D88F510
+P 10200 4550
+F 0 "#PWR025" H 10200 4300 50  0001 C CNN
+F 1 "GND" H 10205 4377 50  0000 C CNN
+F 2 "" H 10200 4550 50  0001 C CNN
+F 3 "" H 10200 4550 50  0001 C CNN
+	1    10200 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 4500 10200 4550
+Text Label 10200 3300 2    50   ~ 0
+5VanalogDAC
+Wire Wire Line
+	10200 3300 10200 3500
+Text Label 7350 2050 0    50   ~ 0
+5VanalogDAC
+Wire Wire Line
+	6900 2050 7300 2050
+Wire Wire Line
+	6900 2300 6900 2350
+Wire Wire Line
+	6250 2300 6250 2350
+Wire Wire Line
+	6900 2050 6900 2100
+Connection ~ 6900 2050
+Wire Wire Line
+	6850 2050 6900 2050
+Wire Wire Line
+	6250 2050 6250 2100
+Wire Wire Line
+	6650 2050 6250 2050
+Connection ~ 6250 2050
+Wire Wire Line
+	6250 2000 6250 2050
+Wire Wire Line
+	6900 2350 6750 2350
+Wire Wire Line
+	6250 2350 6750 2350
+Connection ~ 6750 2350
+$Comp
+L power:GND #PWR011
+U 1 1 5D80127F
+P 6750 2350
+F 0 "#PWR011" H 6750 2100 50  0001 C CNN
+F 1 "GND" H 6850 2250 50  0000 C CNN
+F 2 "" H 6750 2350 50  0001 C CNN
+F 3 "" H 6750 2350 50  0001 C CNN
+	1    6750 2350
+	1    0    0    -1  
+$EndComp
+Text Label 3800 3100 2    50   ~ 0
+5VanalogADC
+$Comp
+L power:+5V #PWR010
+U 1 1 5D76B15F
+P 6250 2000
+F 0 "#PWR010" H 6250 1850 50  0001 C CNN
+F 1 "+5V" H 6265 2173 50  0000 C CNN
+F 2 "" H 6250 2000 50  0001 C CNN
+F 3 "" H 6250 2000 50  0001 C CNN
+	1    6250 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5D8772DB
+P 6250 2200
+F 0 "C6" H 6342 2246 50  0000 L CNN
+F 1 "1uF" H 6342 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6250 2200 50  0001 C CNN
+F 3 "~" H 6250 2200 50  0001 C CNN
+F 4 "1uF 25V MLCC" H 6250 2200 50  0001 C CNN "Symbol"
+	1    6250 2200
+	1    0    0    -1  
+$EndComp
+Text HLabel 1300 3350 0    50   UnSpc ~ 0
+SigIn
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5D92DF9E
+P 2400 3900
+F 0 "TP1" H 2458 4018 50  0000 L CNN
+F 1 "TestPoint" H 2458 3927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 2600 3900 50  0001 C CNN
+F 3 "~" H 2600 3900 50  0001 C CNN
+	1    2400 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 3900 2450 3900
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5D9364DD
+P 4300 3950
+F 0 "TP2" H 4358 4068 50  0000 L CNN
+F 1 "TestPoint" H 4358 3977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 4500 3950 50  0001 C CNN
+F 3 "~" H 4500 3950 50  0001 C CNN
+	1    4300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3950 4300 4000
+Connection ~ 4300 4000
+Wire Wire Line
+	4300 4000 4750 4000
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5D93D372
+P 9100 3900
+F 0 "TP3" H 9158 4018 50  0000 L CNN
+F 1 "TestPoint" H 9158 3927 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded" H 9300 3900 50  0001 C CNN
+F 3 "~" H 9300 3900 50  0001 C CNN
+	1    9100 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3900 9100 4000
+Connection ~ 9100 4000
+Wire Wire Line
+	9100 4000 9050 4000
+$Comp
+L Device:C_Small C8
+U 1 1 5D958115
+P 2450 4100
+F 0 "C8" H 2542 4146 50  0000 L CNN
+F 1 "100pF" H 2542 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2450 4100 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CC0805JRNP09BN101-Yageo-datasheet-119131.pdf" H 2450 4100 50  0001 C CNN
+	1    2450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4200 2450 4350
+$Comp
+L power:GND #PWR014
+U 1 1 5D95AAB0
+P 2450 4350
+F 0 "#PWR014" H 2450 4100 50  0001 C CNN
+F 1 "GND" H 2455 4177 50  0000 C CNN
+F 2 "" H 2450 4350 50  0001 C CNN
+F 3 "" H 2450 4350 50  0001 C CNN
+	1    2450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 4000 2450 3900
+Connection ~ 2450 3900
+Wire Wire Line
+	2450 3900 2850 3900
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 5D847491
+P 6350 4950
+F 0 "Q2" V 6601 4950 50  0000 C CNN
+F 1 "BSS131H6327XTSA1" V 6692 4950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6550 5050 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/BSS131H6327XTSA1-Infineon-datasheet-13719991.pdf" H 6350 4950 50  0001 C CNN
+	1    6350 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5D791C59
+P 5750 4750
+F 0 "R5" V 5650 4750 50  0000 C CNN
+F 1 "4,7k" V 5850 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5680 4750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RC0805FR-074K7L-Yageo-datasheet-8330313.pdf" H 5750 4750 50  0001 C CNN
+	1    5750 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 5D87F2AA
+P 6750 5450
+F 0 "Q3" V 7001 5450 50  0000 C CNN
+F 1 "BSS131H6327XTSA1" V 7092 5450 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6950 5550 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/BSS131H6327XTSA1-Infineon-datasheet-13719991.pdf" H 6750 5450 50  0001 C CNN
+	1    6750 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 4550 5900 4550
+Wire Wire Line
+	5900 4500 5900 4550
+Connection ~ 5900 4550
+Wire Wire Line
+	5900 4550 6050 4550
+Wire Wire Line
+	5750 4600 5750 4550
+Wire Wire Line
+	6050 4550 6050 4600
+Wire Wire Line
+	6350 4750 6350 4550
+Wire Wire Line
+	6350 4550 6050 4550
+Connection ~ 6050 4550
+Wire Wire Line
+	5650 5050 5750 5050
+Wire Wire Line
+	5750 4900 5750 5050
+Connection ~ 5750 5050
+Wire Wire Line
+	5750 5050 6150 5050
+Wire Wire Line
+	6050 4900 6050 5550
+$Comp
+L power:+5V #PWR020
+U 1 1 5D8C1753
+P 7050 4500
+F 0 "#PWR020" H 7050 4350 50  0001 C CNN
+F 1 "+5V" H 7065 4673 50  0000 C CNN
+F 2 "" H 7050 4500 50  0001 C CNN
+F 3 "" H 7050 4500 50  0001 C CNN
+	1    7050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4600 6900 4550
+Wire Wire Line
+	6900 4550 7050 4550
+Wire Wire Line
+	7200 4550 7200 4600
+Wire Wire Line
+	7050 4500 7050 4550
+Connection ~ 7050 4550
+Wire Wire Line
+	7050 4550 7200 4550
+Wire Wire Line
+	7700 5050 7700 4000
+Wire Wire Line
+	7700 4000 7800 4000
+Wire Wire Line
+	6900 4900 6900 5050
+Wire Wire Line
+	5650 5550 6050 5550
+Wire Wire Line
+	6050 5550 6550 5550
+Connection ~ 6050 5550
+Wire Wire Line
+	6750 5250 6750 4550
+Wire Wire Line
+	6750 4550 6350 4550
+Connection ~ 6350 4550
+Connection ~ 6900 5050
+Wire Wire Line
+	6900 5050 7700 5050
+Wire Wire Line
+	6550 5050 6900 5050
+Wire Wire Line
+	6950 5550 7200 5550
+Wire Wire Line
+	7800 5550 7800 4100
+Wire Wire Line
+	7200 4900 7200 5550
+Connection ~ 7200 5550
+Wire Wire Line
+	7200 5550 7800 5550
+Wire Wire Line
+	8200 4400 8200 4550
+$Comp
+L power:GND #PWR023
+U 1 1 5D771185
+P 8200 4550
+F 0 "#PWR023" H 8200 4300 50  0001 C CNN
+F 1 "GND" H 8205 4377 50  0000 C CNN
+F 2 "" H 8200 4550 50  0001 C CNN
+F 3 "" H 8200 4550 50  0001 C CNN
+	1    8200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5D997EAE
+P 7300 2000
+F 0 "#FLG03" H 7300 2075 50  0001 C CNN
+F 1 "PWR_FLAG" H 7300 2173 50  0000 C CNN
+F 2 "" H 7300 2000 50  0001 C CNN
+F 3 "~" H 7300 2000 50  0001 C CNN
+	1    7300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2000 7300 2050
+Connection ~ 7300 2050
+$Comp
+L Device:C_Small C?
+U 1 1 5D9C00FD
+P 6900 2200
+AR Path="/5D75BDD4/5D9C00FD" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D9C00FD" Ref="C7"  Part="1" 
+F 0 "C7" H 6950 2250 50  0000 L CNN
+F 1 "100n" H 6950 2150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 2200 50  0001 C CNN
+F 3 "" H 6900 2200 50  0001 C CNN
+F 4 "06033C104JAT2A" H 6900 2200 50  0001 C CNN "Symbol"
+	1    6900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB2
+U 1 1 5D9C8308
+P 6750 2050
+AR Path="/5D75C1ED/5D9C8308" Ref="FB2"  Part="1" 
+AR Path="/5D75BDD4/5D9C8308" Ref="FB?"  Part="1" 
+F 0 "FB2" V 6513 2050 50  0000 C CNN
+F 1 "BLM21PG600SN1D" V 6604 2050 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 6680 2050 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/BLM21PG600SN1D-Murata-datasheet-53019.pdf" H 6750 2050 50  0001 C CNN
+	1    6750 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D9D1B54
+P 8000 3100
+AR Path="/5D75BDD4/5D9D1B54" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D9D1B54" Ref="C12"  Part="1" 
+F 0 "C12" H 8050 3150 50  0000 L CNN
+F 1 "100n" H 8050 3050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8000 3100 50  0001 C CNN
+F 3 "" H 8000 3100 50  0001 C CNN
+F 4 "06033C104JAT2A" H 8000 3100 50  0001 C CNN "Symbol"
+	1    8000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D9E41EB
+P 4100 3400
+AR Path="/5D75BDD4/5D9E41EB" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D9E41EB" Ref="C10"  Part="1" 
+F 0 "C10" H 4192 3446 50  0000 L CNN
+F 1 "4u7 X5R" H 4192 3355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 3400 50  0001 C CNN
+F 3 "~" H 4100 3400 50  0001 C CNN
+F 4 "CL10A475KP8NNNC" H 4100 3400 50  0001 C CNN "Symbol"
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D9EBD66
+P 8400 3100
+AR Path="/5D75BDD4/5D9EBD66" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5D9EBD66" Ref="C13"  Part="1" 
+F 0 "C13" H 8492 3146 50  0000 L CNN
+F 1 "4u7 X5R" H 8492 3055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8400 3100 50  0001 C CNN
+F 3 "~" H 8400 3100 50  0001 C CNN
+F 4 "CL10A475KP8NNNC" H 8400 3100 50  0001 C CNN "Symbol"
+	1    8400 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5D8EE77D
+P 3800 4800
+F 0 "R4" V 3700 4800 50  0000 C CNN
+F 1 "10R" V 3900 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3730 4800 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CRCW060310R0FKEA-Vishay-datasheet-14722531.pdf" H 3800 4800 50  0001 C CNN
+	1    3800 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5D8FEEA9
+P 6050 4750
+F 0 "R6" V 5950 4750 50  0000 C CNN
+F 1 "4,7k" V 6150 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5980 4750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RC0805FR-074K7L-Yageo-datasheet-8330313.pdf" H 6050 4750 50  0001 C CNN
+	1    6050 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 5D9067F4
+P 7200 4750
+F 0 "R9" V 7100 4750 50  0000 C CNN
+F 1 "4,7k" V 7300 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 4750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RC0805FR-074K7L-Yageo-datasheet-8330313.pdf" H 7200 4750 50  0001 C CNN
+	1    7200 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Analog_DAC_custom:MCP4726AxT-E_CH U5
+U 1 1 5D76FA6E
+P 8200 4000
+F 0 "U5" H 7900 4400 50  0000 L CNN
+F 1 "MCP4726AxT-E_CH" H 8300 4400 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 8200 3550 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/MCP4726A0T-E/CH-Microchip-datasheet-11052890.pdf" H 8200 4000 50  0001 C CNN
+	1    8200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5D9031F5
+P 6900 4750
+F 0 "R7" V 6800 4750 50  0000 C CNN
+F 1 "4,7k" V 7000 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 4750 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RC0805FR-074K7L-Yageo-datasheet-8330313.pdf" H 6900 4750 50  0001 C CNN
+	1    6900 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 2700 2250 2700
+Wire Wire Line
+	7700 2050 7700 2700
+Wire Wire Line
+	7300 2050 7700 2050
+Wire Wire Line
+	3200 2300 3600 2300
+Wire Wire Line
+	3200 2550 3200 2600
+Wire Wire Line
+	2550 2550 2550 2600
+Wire Wire Line
+	3200 2300 3200 2350
+Connection ~ 3200 2300
+Wire Wire Line
+	3150 2300 3200 2300
+Wire Wire Line
+	2550 2300 2550 2350
+Wire Wire Line
+	2950 2300 2550 2300
+Connection ~ 2550 2300
+Wire Wire Line
+	2550 2250 2550 2300
+Wire Wire Line
+	3200 2600 3050 2600
+Wire Wire Line
+	2550 2600 3050 2600
+Connection ~ 3050 2600
+$Comp
+L power:GND #PWR047
+U 1 1 5DA81A35
+P 3050 2600
+F 0 "#PWR047" H 3050 2350 50  0001 C CNN
+F 1 "GND" H 3150 2500 50  0000 C CNN
+F 2 "" H 3050 2600 50  0001 C CNN
+F 3 "" H 3050 2600 50  0001 C CNN
+	1    3050 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR012
+U 1 1 5DA81A3B
+P 2550 2250
+F 0 "#PWR012" H 2550 2100 50  0001 C CNN
+F 1 "+5V" H 2565 2423 50  0000 C CNN
+F 2 "" H 2550 2250 50  0001 C CNN
+F 3 "" H 2550 2250 50  0001 C CNN
+	1    2550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C29
+U 1 1 5DA81A42
+P 2550 2450
+F 0 "C29" H 2642 2496 50  0000 L CNN
+F 1 "1uF" H 2642 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2550 2450 50  0001 C CNN
+F 3 "~" H 2550 2450 50  0001 C CNN
+F 4 "1uF 25V MLCC" H 2550 2450 50  0001 C CNN "Symbol"
+	1    2550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG04
+U 1 1 5DA81A48
+P 3600 2250
+F 0 "#FLG04" H 3600 2325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3600 2423 50  0000 C CNN
+F 2 "" H 3600 2250 50  0001 C CNN
+F 3 "~" H 3600 2250 50  0001 C CNN
+	1    3600 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2250 3600 2300
+Connection ~ 3600 2300
+$Comp
+L Device:C_Small C?
+U 1 1 5DA81A51
+P 3200 2450
+AR Path="/5D75BDD4/5DA81A51" Ref="C?"  Part="1" 
+AR Path="/5D75C1ED/5DA81A51" Ref="C30"  Part="1" 
+F 0 "C30" H 3250 2500 50  0000 L CNN
+F 1 "100n" H 3250 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3200 2450 50  0001 C CNN
+F 3 "" H 3200 2450 50  0001 C CNN
+F 4 "06033C104JAT2A" H 3200 2450 50  0001 C CNN "Symbol"
+	1    3200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB3
+U 1 1 5DA81A57
+P 3050 2300
+AR Path="/5D75C1ED/5DA81A57" Ref="FB3"  Part="1" 
+AR Path="/5D75BDD4/5DA81A57" Ref="FB?"  Part="1" 
+F 0 "FB3" V 2813 2300 50  0000 C CNN
+F 1 "BLM21PG600SN1D" V 2904 2300 50  0000 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric" V 2980 2300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/BLM21PG600SN1D-Murata-datasheet-53019.pdf" H 3050 2300 50  0001 C CNN
+	1    3050 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3600 2300 3800 2300
+Wire Wire Line
+	3800 2300 3800 3250
+Text Label 1950 4100 2    50   ~ 0
+5VanalogADC
+Wire Wire Line
+	1950 4100 2150 4100
+Wire Wire Line
+	2150 3850 2150 4100
+$EndSCHEMATC

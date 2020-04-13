@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name digikey-footprints)(type KiCad)(uri /home/scott/KiCAD_external_libraries/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name My_Connector_card)(type KiCad)(uri /home/scott/KiCAD_external_libraries/my-kicad-library/My_Connector_card.pretty)(options "")(descr ""))
+  (lib (name My_RF_Antenna)(type KiCad)(uri /home/scott/KiCAD_external_libraries/my-kicad-library/My_RF_Antenna.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP4726A?T-E_CH
+D 12bit DAC with external or Vcc reference. Uses I2C interface.
+K DAC 12bit I2C
+$ENDCMP
+#
+$CMP MCP4726AxT-E_CH
+D 12bit DAC with external or Vcc reference. Uses I2C interface.
+K DAC 12bit I2C
+$ENDCMP
+#
+#End Doc Library

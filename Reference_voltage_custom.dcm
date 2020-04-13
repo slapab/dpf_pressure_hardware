@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TL431
+D Adjustable precision shunt regulator - 0.5% - mirrored pins
+K TL431
+$ENDCMP
+#
+$CMP TL431BMFDT
+D Adjustable precision shunt regulator - 0.5% - mirrored pins
+K TL431
+$ENDCMP
+#
+#End Doc Library

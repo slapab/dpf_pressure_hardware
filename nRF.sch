@@ -1,0 +1,728 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR038
+U 1 1 5D77095E
+P 5750 6250
+F 0 "#PWR038" H 5750 6000 50  0001 C CNN
+F 1 "GND" H 5755 6077 50  0000 C CNN
+F 2 "" H 5750 6250 50  0001 C CNN
+F 3 "" H 5750 6250 50  0001 C CNN
+	1    5750 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 6250 5750 6200
+Wire Wire Line
+	5850 6100 5850 6200
+Wire Wire Line
+	5850 6200 5750 6200
+Connection ~ 5750 6200
+Wire Wire Line
+	5750 6200 5750 6100
+Text HLabel 6950 3000 2    50   Input ~ 0
+AVin
+Text HLabel 6950 5700 2    50   Input ~ 0
+uSD_MISO
+Text HLabel 6950 5400 2    50   Output ~ 0
+uSD_MOSI
+Text HLabel 6950 5300 2    50   Output ~ 0
+uSD_CS
+Text HLabel 6950 5200 2    50   Input ~ 0
+uSD_DETECT
+Text HLabel 6950 5800 2    50   Output ~ 0
+uSD_CLK
+Wire Wire Line
+	5300 2300 5450 2300
+Wire Wire Line
+	5450 2300 5450 2500
+$Comp
+L Device:C_Small C23
+U 1 1 5D89AD23
+P 5200 1950
+F 0 "C23" V 4971 1950 50  0000 C CNN
+F 1 "47nF" V 5062 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5200 1950 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/GRM155R71E473KA88D-Murata-datasheet-8817987.pdf" H 5200 1950 50  0001 C CNN
+	1    5200 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 1950 5550 1950
+Wire Wire Line
+	5550 1950 5550 2500
+NoConn ~ 6250 2500
+Wire Wire Line
+	5750 2500 5750 1700
+Wire Wire Line
+	5750 1700 5950 1700
+$Comp
+L power:GND #PWR039
+U 1 1 5D8A3026
+P 6300 1750
+F 0 "#PWR039" H 6300 1500 50  0001 C CNN
+F 1 "GND" H 6305 1577 50  0000 C CNN
+F 2 "" H 6300 1750 50  0001 C CNN
+F 3 "" H 6300 1750 50  0001 C CNN
+	1    6300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1350 5750 1350
+Wire Wire Line
+	5750 1350 5750 1700
+Connection ~ 5750 1700
+$Comp
+L Device:C_Small C27
+U 1 1 5D8ABBAB
+P 6800 2300
+F 0 "C27" V 6900 2200 50  0000 C CNN
+F 1 "1nF" V 6900 2400 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6800 2300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/C0603C102K5RAC7013-KEMET-datasheet-84169754.pdf" H 6800 2300 50  0001 C CNN
+F 4 "C0603C102K5RAC7013" V 6800 2300 50  0001 C CNN "Symbol"
+	1    6800 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 2500 6050 2300
+Wire Wire Line
+	6050 2300 6650 2300
+Wire Wire Line
+	7050 2300 6900 2300
+Wire Wire Line
+	5850 2500 5850 2150
+Wire Wire Line
+	5850 2150 6100 2150
+Text Label 6100 2150 0    50   ~ 0
+VDD_PA
+$Comp
+L power:GND #PWR033
+U 1 1 5D8B79F4
+P 3700 3850
+F 0 "#PWR033" H 3700 3600 50  0001 C CNN
+F 1 "GND" H 3705 3677 50  0000 C CNN
+F 2 "" H 3700 3850 50  0001 C CNN
+F 3 "" H 3700 3850 50  0001 C CNN
+	1    3700 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L_Small L3
+U 1 1 5D8B879A
+P 3700 3400
+F 0 "L3" H 3656 3354 50  0000 R CNN
+F 1 "10nH" H 3656 3445 50  0000 R CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 3700 3400 50  0001 C CNN
+F 3 "~http://datasheet.octopart.com/LQG15HN10NJ02D-Murata-datasheet-502675.pdf" H 3700 3400 50  0001 C CNN
+	1    3700 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5D8B98EC
+P 3700 3700
+F 0 "C20" H 3608 3654 50  0000 R CNN
+F 1 "2.2nF X7R" H 3608 3745 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3700 3700 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CL05B222KB5NNNC-Samsung-Electro-Mechanics-datasheet-11782308.pdf" H 3700 3700 50  0001 C CNN
+	1    3700 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 3800 3700 3850
+Wire Wire Line
+	3700 3500 3700 3550
+$Comp
+L Device:L_Small L2
+U 1 1 5D8BF619
+P 3700 3100
+F 0 "L2" H 3656 3054 50  0000 R CNN
+F 1 "4.7nH" H 3656 3145 50  0000 R CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 3700 3100 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/LQG15HS4N7S02D-Murata-datasheet-104420594.pdf" H 3700 3100 50  0001 C CNN
+	1    3700 3100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3700 3200 3700 3250
+$Comp
+L Device:C_Small C19
+U 1 1 5D8C097E
+P 3450 2950
+F 0 "C19" V 3679 2950 50  0000 C CNN
+F 1 "2.2pF" V 3588 2950 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3450 2950 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/GRM1555C1H2R2CA01D-Murata-datasheet-62317065.pdf" H 3450 2950 50  0001 C CNN
+	1    3450 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C18
+U 1 1 5D8C1059
+P 3300 3100
+F 0 "C18" H 3100 3150 50  0000 L CNN
+F 1 "1pF NP0" H 2950 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3300 3100 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/VJ0603A1R0BXACW1BC-Vishay-datasheet-12509873.pdf" H 3300 3100 50  0001 C CNN
+	1    3300 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2950 3200 2950
+Connection ~ 3300 2950
+Wire Wire Line
+	3300 2950 3350 2950
+Wire Wire Line
+	3300 2950 3300 3000
+$Comp
+L power:GND #PWR032
+U 1 1 5D8C49F3
+P 3300 3250
+F 0 "#PWR032" H 3300 3000 50  0001 C CNN
+F 1 "GND" H 3305 3077 50  0000 C CNN
+F 2 "" H 3300 3250 50  0001 C CNN
+F 3 "" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3200 3300 3250
+$Comp
+L Device:L_Small L1
+U 1 1 5D8C5FEB
+P 3100 2950
+F 0 "L1" V 3285 2950 50  0000 C CNN
+F 1 "3.3nH" V 3194 2950 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 3100 2950 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/LQG15HN3N3S02D-Murata-datasheet-502675.pdf" H 3100 2950 50  0001 C CNN
+	1    3100 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C17
+U 1 1 5D8C6B21
+P 2850 3100
+F 0 "C17" H 2650 3150 50  0000 L CNN
+F 1 "1.5pF NP0" H 2450 3000 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2850 3100 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CC0603CRNPO9BN1R5-Yageo-datasheet-136957424.pdf" H 2850 3100 50  0001 C CNN
+	1    2850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3000 2850 2950
+Wire Wire Line
+	2850 2950 3000 2950
+$Comp
+L power:GND #PWR031
+U 1 1 5D8C766B
+P 2850 3250
+F 0 "#PWR031" H 2850 3000 50  0001 C CNN
+F 1 "GND" H 2855 3077 50  0000 C CNN
+F 2 "" H 2850 3250 50  0001 C CNN
+F 3 "" H 2850 3250 50  0001 C CNN
+	1    2850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3200 2850 3250
+Connection ~ 2850 2950
+Wire Wire Line
+	4850 3300 4300 3300
+Wire Wire Line
+	4300 3300 4300 2950
+Wire Wire Line
+	3550 2950 3700 2950
+Wire Wire Line
+	3700 3000 3700 2950
+Connection ~ 3700 2950
+Wire Wire Line
+	3700 2950 4300 2950
+Wire Wire Line
+	3700 3250 4150 3250
+Wire Wire Line
+	4150 3250 4150 3100
+Wire Wire Line
+	4150 3100 4850 3100
+Connection ~ 3700 3250
+Wire Wire Line
+	3700 3250 3700 3300
+Wire Wire Line
+	3700 3550 4150 3550
+Connection ~ 3700 3550
+Wire Wire Line
+	3700 3550 3700 3600
+Text Label 4150 3550 0    50   ~ 0
+VDD_PA
+Wire Wire Line
+	4700 5500 4700 5400
+Wire Wire Line
+	4700 5400 4850 5400
+$Comp
+L power:GND #PWR035
+U 1 1 5D8D7EC3
+P 4700 5750
+F 0 "#PWR035" H 4700 5500 50  0001 C CNN
+F 1 "GND" H 4705 5577 50  0000 C CNN
+F 2 "" H 4700 5750 50  0001 C CNN
+F 3 "" H 4700 5750 50  0001 C CNN
+	1    4700 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 5700 4700 5750
+Wire Wire Line
+	4200 4400 4200 4600
+Wire Wire Line
+	4200 4600 4850 4600
+$Comp
+L Device:C_Small C21
+U 1 1 5D8EAC11
+P 4050 4000
+F 0 "C21" V 3950 3850 50  0000 L CNN
+F 1 "12pF NP0" V 3950 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4050 4000 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CL05C120JB5NNNC-Samsung-Electro-Mechanics-datasheet-11841602.pdf" H 4050 4000 50  0001 C CNN
+	1    4050 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 4600 4200 4600
+Connection ~ 4200 4600
+Wire Wire Line
+	3950 4000 3850 4000
+Wire Wire Line
+	3850 4000 3850 4600
+Wire Wire Line
+	3850 4600 3950 4600
+Wire Wire Line
+	3850 4600 3850 4700
+Connection ~ 3850 4600
+$Comp
+L power:GND #PWR034
+U 1 1 5D8EF966
+P 3850 4700
+F 0 "#PWR034" H 3850 4450 50  0001 C CNN
+F 1 "GND" H 3855 4527 50  0000 C CNN
+F 2 "" H 3850 4700 50  0001 C CNN
+F 3 "" H 3850 4700 50  0001 C CNN
+	1    3850 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR037
+U 1 1 5D90D2CF
+P 5750 850
+F 0 "#PWR037" H 5750 700 50  0001 C CNN
+F 1 "+3.3V" H 5765 1023 50  0000 C CNN
+F 2 "" H 5750 850 50  0001 C CNN
+F 3 "" H 5750 850 50  0001 C CNN
+	1    5750 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 850  5750 1050
+Connection ~ 5750 1350
+$Comp
+L power:+3.3V #PWR040
+U 1 1 5D91449B
+P 6650 2050
+F 0 "#PWR040" H 6650 1900 50  0001 C CNN
+F 1 "+3.3V" H 6665 2223 50  0000 C CNN
+F 2 "" H 6650 2050 50  0001 C CNN
+F 3 "" H 6650 2050 50  0001 C CNN
+	1    6650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 2050 6650 2300
+Connection ~ 6650 2300
+Wire Wire Line
+	6650 2300 6700 2300
+$Comp
+L power:GND #PWR036
+U 1 1 5D899AE7
+P 4800 2400
+F 0 "#PWR036" H 4800 2150 50  0001 C CNN
+F 1 "GND" H 4805 2227 50  0000 C CNN
+F 2 "" H 4800 2400 50  0001 C CNN
+F 3 "" H 4800 2400 50  0001 C CNN
+	1    4800 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1950 4800 1950
+Wire Wire Line
+	4800 1950 4800 2300
+Wire Wire Line
+	5100 2300 4800 2300
+Connection ~ 4800 2300
+Wire Wire Line
+	4800 2300 4800 2400
+$Comp
+L power:GND #PWR041
+U 1 1 5D8A0A84
+P 7050 2300
+F 0 "#PWR041" H 7050 2050 50  0001 C CNN
+F 1 "GND" H 7055 2127 50  0000 C CNN
+F 2 "" H 7050 2300 50  0001 C CNN
+F 3 "" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1700 6300 1750
+Wire Wire Line
+	6150 1700 6300 1700
+Wire Wire Line
+	6300 1350 6300 1700
+Wire Wire Line
+	6150 1350 6300 1350
+Connection ~ 6300 1700
+Wire Wire Line
+	6650 5200 6950 5200
+Wire Wire Line
+	6650 5300 6950 5300
+Wire Wire Line
+	6650 5800 6950 5800
+Wire Wire Line
+	6950 5700 6650 5700
+Wire Wire Line
+	6650 5400 6950 5400
+Wire Wire Line
+	6650 3000 6950 3000
+NoConn ~ 6650 2800
+NoConn ~ 6650 4900
+Wire Wire Line
+	4850 5300 4500 5300
+Wire Wire Line
+	4700 5400 4500 5400
+Connection ~ 4700 5400
+Text HLabel 4500 5400 0    50   BiDi ~ 0
+SWDCLK
+Text HLabel 4500 5300 0    50   BiDi ~ 0
+SWDIO
+Wire Wire Line
+	6650 4400 6950 4400
+Wire Wire Line
+	6650 4500 6950 4500
+Text HLabel 6950 4400 2    50   Input ~ 0
+UART_RX
+Text HLabel 6950 4500 2    50   Output ~ 0
+UART_TX
+Wire Wire Line
+	6650 3800 6950 3800
+Wire Wire Line
+	6650 3700 6950 3700
+Text HLabel 6950 3800 2    50   Output ~ 0
+nRF_SCL
+Text HLabel 6950 3700 2    50   BiDi ~ 0
+nRF_SDA
+$Comp
+L MCU_Nordic:nRF51x22-QFxx U7
+U 1 1 5D770958
+P 5750 4300
+F 0 "U7" H 5300 2450 50  0000 C CNN
+F 1 "nRF51822-QFAA" H 6250 2450 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.6x4.6mm" H 5750 4300 50  0001 C CNN
+F 3 "http://infocenter.nordicsemi.com/pdf/nRF51822_PS_v3.3.pdf" H 5350 4200 50  0001 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4600 6950 4600
+Text HLabel 6950 4600 2    50   Output ~ 0
+DbgIO
+$Comp
+L Device:LED_Small D1
+U 1 1 5D8E6B75
+P 7400 3600
+F 0 "D1" H 7400 3835 50  0000 C CNN
+F 1 "LED_Green" H 7400 3744 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric" V 7400 3600 50  0001 C CNN
+F 3 "~" V 7400 3600 50  0001 C CNN
+F 4 "LED_SMD_1206_GREEN" H 7400 3600 50  0001 C CNN "Symbol"
+	1    7400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3600 6950 3600
+$Comp
+L Device:R_Small R12
+U 1 1 5D8E7AE6
+P 7050 3600
+F 0 "R12" V 6950 3550 50  0000 L CNN
+F 1 "1k" V 7050 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7050 3600 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RC0603FR-071KL-Yageo-datasheet-8328172.pdf" H 7050 3600 50  0001 C CNN
+F 4 "RC0603FR-071KL" V 7050 3600 50  0001 C CNN "Symbol"
+	1    7050 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7150 3600 7300 3600
+$Comp
+L power:+3.3V #PWR042
+U 1 1 5D8F41BC
+P 7750 3600
+F 0 "#PWR042" H 7750 3450 50  0001 C CNN
+F 1 "+3.3V" H 7765 3773 50  0000 C CNN
+F 2 "" H 7750 3600 50  0001 C CNN
+F 3 "" H 7750 3600 50  0001 C CNN
+	1    7750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3600 7750 3600
+NoConn ~ 6650 4000
+NoConn ~ 6650 4100
+NoConn ~ 6650 4200
+NoConn ~ 6650 3100
+NoConn ~ 6650 3200
+NoConn ~ 6650 3300
+NoConn ~ 6650 3400
+NoConn ~ 6650 3500
+NoConn ~ 6650 5500
+NoConn ~ 6650 5600
+NoConn ~ 6650 5900
+Wire Wire Line
+	2250 2950 2850 2950
+$Comp
+L Device:C_Small C22
+U 1 1 5D96CF52
+P 4050 4600
+F 0 "C22" V 3950 4450 50  0000 L CNN
+F 1 "12pF NP0" V 4200 4650 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4050 4600 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/CL05C120JB5NNNC-Samsung-Electro-Mechanics-datasheet-11841602.pdf" H 4050 4600 50  0001 C CNN
+	1    4050 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D982FCB
+P 6050 1350
+AR Path="/5D75BDD4/5D982FCB" Ref="C?"  Part="1" 
+AR Path="/5D76E941/5D982FCB" Ref="C25"  Part="1" 
+F 0 "C25" V 5850 1300 50  0000 L CNN
+F 1 "100n" V 5950 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 1350 50  0001 C CNN
+F 3 "" H 6050 1350 50  0001 C CNN
+F 4 "06033C104JAT2A" H 6050 1350 50  0001 C CNN "Symbol"
+	1    6050 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D989959
+P 5200 2300
+AR Path="/5D75BDD4/5D989959" Ref="C?"  Part="1" 
+AR Path="/5D76E941/5D989959" Ref="C24"  Part="1" 
+F 0 "C24" V 5000 2200 50  0000 L CNN
+F 1 "100n" V 5100 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5200 2300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/06033C104JAT2A-AVX-datasheet-12509786.pdf" H 5200 2300 50  0001 C CNN
+F 4 "06033C104JAT2A" H 5200 2300 50  0001 C CNN "Symbol"
+	1    5200 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D992ED8
+P 6050 1700
+AR Path="/5D75BDD4/5D992ED8" Ref="C?"  Part="1" 
+AR Path="/5D76E941/5D992ED8" Ref="C26"  Part="1" 
+F 0 "C26" V 5850 1650 50  0000 L CNN
+F 1 "100n" V 5950 1600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 1700 50  0001 C CNN
+F 3 "" H 6050 1700 50  0001 C CNN
+F 4 "06033C104JAT2A" H 6050 1700 50  0001 C CNN "Symbol"
+	1    6050 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R11
+U 1 1 5D9A02FD
+P 4700 5600
+F 0 "R11" H 4500 5550 50  0000 L CNN
+F 1 "1k" H 4550 5650 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4700 5600 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/RC0603FR-071KL-Yageo-datasheet-8328172.pdf" H 4700 5600 50  0001 C CNN
+F 4 "RC0603FR-071KL" H 4700 5600 50  0001 C CNN "Symbol"
+	1    4700 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_RF-Antennas:2450AT18A100E ANT1
+U 1 1 5D96986B
+P 2050 2950
+F 0 "ANT1" H 2050 2703 60  0000 C CNN
+F 1 "2450AT18A100E" H 2050 2809 60  0000 C CNN
+F 2 "My_RF_Antenna:2.4GHz_ISM_antenna_RFANT8010080A3T" H 2250 3150 60  0001 L CNN
+F 3 "https://datasheet.octopart.com/RFANT8010080A3T-Walsin-Technologies-datasheet-28813183.pdf" H 2250 3250 60  0001 L CNN
+F 4 "RFANT8010080A3T" H 2250 3450 60  0001 L CNN "MPN"
+F 5 "RF/IF and RFID" H 2250 3550 60  0001 L CNN "Category"
+F 6 "RF Antennas" H 2250 3650 60  0001 L CNN "Family"
+F 7 "RF ANT 2.4GHZ CHIP SOLDER SMD" H 2250 3950 60  0001 L CNN "Description"
+F 8 "Walsin Technology Corporation" H 2250 4050 60  0001 L CNN "Manufacturer"
+F 9 "Active" H 2250 4150 60  0001 L CNN "Status"
+	1    2050 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DA101CC
+P 6050 1050
+AR Path="/5D75BDD4/5DA101CC" Ref="C?"  Part="1" 
+AR Path="/5D76E941/5DA101CC" Ref="C28"  Part="1" 
+F 0 "C28" V 5850 1000 50  0000 L CNN
+F 1 "100n" V 5950 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 1050 50  0001 C CNN
+F 3 "" H 6050 1050 50  0001 C CNN
+F 4 "06033C104JAT2A" H 6050 1050 50  0001 C CNN "Symbol"
+	1    6050 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 1050 5750 1050
+Connection ~ 5750 1050
+Wire Wire Line
+	5750 1050 5750 1350
+Wire Wire Line
+	6150 1050 6300 1050
+Wire Wire Line
+	6300 1050 6300 1350
+Connection ~ 6300 1350
+Connection ~ 4200 4000
+Wire Wire Line
+	4150 4000 4200 4000
+Wire Wire Line
+	4200 4000 4850 4000
+Wire Wire Line
+	4200 4200 4200 4000
+$Comp
+L Device:Crystal_Small Y1
+U 1 1 5D8DB321
+P 4200 4300
+F 0 "Y1" V 4100 4150 50  0000 L CNN
+F 1 "16MHz 8pF 40ppm" V 4300 3550 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM10-4Pin_2.5x2.0mm" H 4200 4300 50  0001 C CNN
+F 3 "http://datasheet.octopart.com/LFXTAL069392CUTT-IQD-Frequency-Products-datasheet-100470617.pdf" H 4200 4300 50  0001 C CNN
+F 4 "LFXTAL069392CUTT" V 4200 4300 50  0001 C CNN "Symbol"
+	1    4200 4300
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 6650 5000
+NoConn ~ 6650 5100
+$Comp
+L Sensor_Temperature:MCP9700T-ELT U8
+U 1 1 5DA73252
+P 9500 2650
+F 0 "U8" H 9171 2696 50  0000 R CNN
+F 1 "MCP9700T-ELT" H 9171 2605 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 9500 2250 50  0001 C CNN
+F 3 "https://pl.mouser.com/datasheet/2/268/20001942G-1820450.pdf" H 9500 2650 50  0001 C CNN
+	1    9500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR048
+U 1 1 5DA760D7
+P 9500 2250
+F 0 "#PWR048" H 9500 2100 50  0001 C CNN
+F 1 "+3.3V" H 9515 2423 50  0000 C CNN
+F 2 "" H 9500 2250 50  0001 C CNN
+F 3 "" H 9500 2250 50  0001 C CNN
+	1    9500 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2250 9500 2350
+$Comp
+L power:GND #PWR049
+U 1 1 5DA78B39
+P 9500 3000
+F 0 "#PWR049" H 9500 2750 50  0001 C CNN
+F 1 "GND" H 9505 2827 50  0000 C CNN
+F 2 "" H 9500 3000 50  0001 C CNN
+F 3 "" H 9500 3000 50  0001 C CNN
+	1    9500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2950 9500 3000
+Wire Wire Line
+	9900 2650 10100 2650
+Wire Wire Line
+	6650 2900 6950 2900
+Text Label 10100 2650 0    50   ~ 0
+TempSensor
+Text Label 6950 2900 0    50   ~ 0
+TempSensor
+Wire Wire Line
+	6650 4700 7300 4700
+Wire Wire Line
+	7300 4800 6650 4800
+$Comp
+L Device:R_Small R13
+U 1 1 5DADE2BD
+P 7400 4700
+F 0 "R13" V 7400 4900 50  0000 C CNN
+F 1 "DNP" V 7400 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7400 4700 50  0001 C CNN
+F 3 "~" H 7400 4700 50  0001 C CNN
+	1    7400 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R14
+U 1 1 5DAE1B57
+P 7400 4800
+F 0 "R14" V 7400 5000 50  0000 C CNN
+F 1 "DNP" V 7400 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7400 4800 50  0001 C CNN
+F 3 "~" H 7400 4800 50  0001 C CNN
+	1    7400 4800
+	0    1    1    0   
+$EndComp
+NoConn ~ 7500 4800
+NoConn ~ 7500 4700
+$Comp
+L Device:R_Small R15
+U 1 1 5DAFC166
+P 7400 3900
+F 0 "R15" V 7400 4100 50  0000 C CNN
+F 1 "DNP" V 7400 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7400 3900 50  0001 C CNN
+F 3 "~" H 7400 3900 50  0001 C CNN
+	1    7400 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 3900 7300 3900
+NoConn ~ 7500 3900
+Text Notes 2550 4400 0    50   ~ 0
+Xtal - invalid symbol pins with footprint!
+Wire Notes Line
+	2450 4250 4200 4250
+Wire Notes Line
+	4200 4250 4200 4450
+Wire Notes Line
+	4200 4450 2450 4450
+Wire Notes Line
+	2450 4450 2450 4250
+$EndSCHEMATC
